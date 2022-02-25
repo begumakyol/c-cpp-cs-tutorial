@@ -1,4 +1,5 @@
 #include <stdio.h>
+//yorum
 //bilet alma programi
 int main(){
 	
