@@ -12,8 +12,8 @@ void sortArray(char names[][30], int size){ //bubble sort
 	char temp[30];
 	for(int i=0; i<size-1; i++){
 		for(int j=0; j<size-1-i; j++){
-			if(strcmp(names[j], names[j+1])>0){//strcmp kars˝last˝rma yapar
-				strcpy(temp, names[j]); //sadakini soldakine at˝yor.
+			if(strcmp(names[j], names[j+1])>0){//strcmp kars√Ωlast√Ωrma yapar
+				strcpy(temp, names[j]); //sa√∞dakini soldakine at√Ωyor.
 				strcpy(names[j], names[j+1]);
 				strcpy(names[j + 1], temp);
 			}
@@ -24,7 +24,7 @@ void sortArray(char names[][30], int size){ //bubble sort
 void reverseArray(char names [][30], int size){	
 	char temp[30];
 	for(int i=0; i<size/2; i++){
-		strcpy(temp,names[i]); //sadakini soldakine at˝yor.
+		strcpy(temp,names[i]); //sa√∞dakini soldakine at√Ωyor.
 		strcpy(names[i],names[size-1-i]);
 		strcpy(names[size-1-i],temp);
 	}
@@ -74,10 +74,10 @@ int main(){
 	
 	char name[30];
 	cout << "Aratmak istediginiz ismi giriniz: " <<endl;
-  	cin >> name; // Bo˛luk karakterinden itibaren girilen karakterleri dikkate almaz.
+  	cin >> name; // Bo√æluk karakterinden itibaren girilen karakterleri dikkate almaz.
   	
 	bool result=isExist(name, 10, names);
-//	cout<<result<<endl; //varsa 1, yoksa 0 gˆsterecek.
+//	cout<<result<<endl; //varsa 1, yoksa 0 g√∂sterecek.
 		if(result){
 			cout<<"Isim indekste "<<findName(name,10,names)<<". sirada bulunuyor."<<endl;
 		}
